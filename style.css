@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header{
+    background: #222222;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.leftMenu{
+    width: 111px;
+    padding-top: 18px;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftMenu button{
+    background: #222222;
+    border: none;
+}
+
+.rightMenu{
+    width: 159px;
+    padding-top: 26px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.rightMenu button{
+    background: #222222;
+    border: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.span {
+    background: #F16D7F;
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -9px;
+    top: 20px;
+
+}
+
+.span p{
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    color: #FFFFFF;
+}
+
+.banner{
+    background: #F1E4E6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+.textBanner{
+    width: 405px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.texth2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.banner h1{
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.6px;
+    text-align: left;
+}
+
+.banner h2{
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+}
+
+.bannerh2{
+    color: #F16D7F;
+}
+
+.burgerMenu{
+    width: 232px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.burgerMenu h2{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+    padding-top: 32px;
+    padding-left: 33px;
+    margin-bottom: 24px;
+}
+
+.burgerMenu_card{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.burgerMenu_card h2{
+    font-weight: 400;
+    color: #F16D7F;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.CardBM{
+    padding-left: 32px;
+}
+
+.categori{
+    padding-left: 21.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 11px;
+}
+
+.categori a{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #6F6E6E;
+}
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card{
+    width: 360px;
+    height: 260px;
+}
+
+.opas{
+    background: #211616B2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h3{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.info h2{
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.card_tema1{
+    background-image: url("./img/cardtema1.png");
+}
+
+.card_tema2{
+    background-image: url("./img/cardtema2.png");
+}
+
+.card_tema3{
+    background-image: url("./img/cardtema3.png");
+}
+
+.card_tema4{
+    background-image: url("./img/cardtema4.png");
+    height: 180px;
+    grid-column: span 3;
+}
+
+.cont3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.cont3 button{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: #F26376;
+    background: white;
+    border: 1px solid #FF6A6A;
+    margin-bottom: 60px;
+    padding: 15px 39px;
+}
+
+.cont3 button:hover{
+    color: white;
+    background: #F26376;
+}
+
+.text{
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.text h2{
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 6px;
+}
+
+.text p{
+    font-size: 14px;
+    line-height: 16.8px;
+    text-align: center;
+    color: #9F9F9F;
+}
+
+.container_grid2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card2{
+    background: #F8F8F8;
+    width: 360px;
+    position: relative;
+}
+
+.AddToCard{
+    width: 139px;
+    height: 44px;
+    border: 1px solid;
+    border-color: white;
+    gap: 11px;
+    display: none;
+}
+
+.AddToCard h3{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: white;
+}
+
+.card2 img:hover~.AddToCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 33%;
+    left: 30%;
+}
+
+.card2 img:hover{
+    filter: brightness(35%);
+}
+
+.text2{
+    font-family: Lato;
+    font-weight: 400;
+    text-align: left;
+    padding: 24.35px 28.8px 20px 16.46px;
+}
+
+.text2 h2{
+    font-size: 13px;
+    line-height: 15.6px;
+    color: #000000;
+    margin-bottom: 11.65px;
+}
+
+.text2 p{
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #5D5D5D;
+    margin-bottom: 18px;
+}
+
+.text2 h3{
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #F16D7F;
+}
+
+.backgroundCont4{
+    background-color: #222224;
+}
+
+.cont4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 103px;
+    padding-bottom: 103px;
+}
+
+.cont4__card-text{
+    color: #FBFBFB;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.cont4__card h2{
+    font-size: 19.96px;
+    line-height: 23.95px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cont4__card p{
+    font-size: 13.97px;
+    line-height: 16.77px;
+    text-align: center;
+}
+
+.cont4__card{
+    width: 360px;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont5_tema{
+    background-image: url("./img/cont5_tema.png");
+}
+
+.cont5_opas{
+    background: #F4F4F4B2;
+    width: 100%;
+    height: 100%;
+}
+
+.cont5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont5_card1{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 97px;
+    padding-bottom: 126px;
+}
+
+.cont5_card1 h2{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.cont5_card1 img{
+    margin-bottom: 30px;
+}
+
+.cont5_card2{
+    width: 557px;
+    font-family: Lato;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont5_card2 h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40.13px;
+}
+
+.cont5_card2 h3{
+font-size: 18px;
+font-weight: 400;
+line-height: 30.1px;
+}
+
+.card2_buttom{
+    margin-top: 32px;
+    display: flex;
+    max-width: 356px;
+    height: 49px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+}
+
+.card2_input{
+    border: none;
+    border-radius: none;
+    padding: 7px 64px 6px 22px;
+    background: #E1E1E1;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.card2_buttom button{
+    border: none;
+    border-radius: none;
+    text-align: center;
+    color: #FFFFFF;
+    background: #F16D7F;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 7px 7px 6px 8px;
+}
+
+footer{
+    background: #222224;
+    height: 80px;
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_content p{
+    color: #FBFBFB;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.soc_media{
+    padding-top: 24px;
+    padding-bottom: 23px;
+    display: flex;
+    flex-direction: row;
+    gap: 7.29px;
+}
+
+.soc_media button{
+    width: 31.45px;
+    height: 32px;
+    border: none;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.soc_media button:hover{
+    background: #F16D7F;
+}
+
+.soc_media button:hover svg{
+    fill: white;
+}
+
+@media (min-width: 768px) and (max-width: 1139px){
+    .container{
+        max-width: 736px;
+    }
+    .banner{
+        max-width: 100%;
+    }
+    .banner h1{
+        font-size: 44px;
+        line-height: 52.8px;
+    }
+    .banner h2{
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .banner img{
+        max-width: 50%;
+    }
+    .textBanner{
+        max-width: 311px;
+    }
+    .card{
+        width: auto;
+        height: 167px;
+    }
+    .card_tema4{
+        height: 116px;
+        width: 736px;
+    }
+    .container_grid2{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 14px;
+    }
+    .cont3{
+        gap: 32px;
+    }
+    .cont3 button{
+        margin-bottom: 72px;
+    }
+    .cont4{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        gap: 48.47px;
+    }
+    .cont5_tema{
+        background-size: cover;
+    }
+    .cont5{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont5_card1{
+        padding-top: 64px;
+        padding-bottom: 48px;
+    }
+    .cont5_card2{
+        margin-bottom: 140px;
+    }
+    .card2_buttom input{
+        background-color: #E1E1E1;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        max-width: 767px;
+    }
+    .leftMenu{
+        padding-left: 16px;
+    }
+    .rightMenu > button:not(:first-child){
+        display: none;
+    }
+    .span{
+        display: none;
+    }
+    .rightMenu{
+        padding-right: 16px;
+        justify-content: end;
+    }
+    .banner{
+        max-width: 100%;
+        min-height: 363px;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+    .banner img{
+        display: none;
+    }
+    .textBanner{
+        max-width: 263px;
+    }
+    .banner h1{
+        font-size: 38px;
+        line-height: 45.6px;
+    }
+    .banner h2{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .container_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+    .card{
+        min-width: 343px;
+    }
+    .card_tema1{
+        width: auto;
+    }
+    .card_tema2{
+        width: auto;
+    }
+    .card_tema3{
+        width: auto;
+    }
+    .card_tema4{
+        min-width: 343px;
+    }
+    .cont3{
+        gap: 64px;
+    }
+    .container_grid2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .card2{
+        width: 359px;
+    }
+    .cont3 button{
+        margin-bottom: 85px;
+    }
+    .cont4{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 81px;
+        gap: 46.83px;
+    }
+    .cont5_tema{
+        background-size: cover;
+        height: 550px;
+    }
+    .cont5{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont5_card1{
+        padding-top: 64px;
+        padding-bottom: 59px;
+    }
+    .cont5_card1 h2{
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+    .cont5_card2{
+        margin-bottom: 110px;
+        width: 341px;
+    }
+    .card2_text h2{
+        line-height: 36.77px;
+    }
+    .card2_text h3{
+        font-size: 14px;
+        line-height: 21.45px;
+    }
+    .card2_buttom{
+        min-width: 341px;
+        height: 46.94px;
+    }
+    footer{
+        height: 143px;
+    }
+    .footer_content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer_content p{
+        padding: 0;
+        margin-bottom: 9px;
+    }
+    .soc_media{
+        padding-top: 43px;
+        padding-bottom: 40px;
+    }
+}
